@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLy
 {
-    public partial class Form1 : Form
+    public partial class frmChinh : Form
     {
-        public Form1()
+        public frmChinh()
         {
             InitializeComponent();
+        }
+
+        private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
