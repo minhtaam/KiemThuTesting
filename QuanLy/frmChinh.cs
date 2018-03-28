@@ -21,5 +21,24 @@ namespace QuanLy
         {
 
         }
+
+        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDangNhap f = new FrmDangNhap();
+            f.ShowDialog();
+            quảnLýToolStripMenuItem.Enabled = đăngNhậpToolStripMenuItem.Enabled = thốngKêToolStripMenuItem.Enabled = thôngTinToolStripMenuItem = true;
+            
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có muốn thoát ? ", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+                return;
+        }
     }
 }
